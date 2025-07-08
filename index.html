@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6ee9b0206a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!--Navbar -->
+  <nav class="futuristic-navbar">
+    <div class="nav-container">
+      <!-- Logo/Brand -->
+      <div class="nav-brand">
+        <div class="brand-icon">
+          <div class="icon-circle"></div>
+          <span class="brand-text">A</span>
+        </div>
+      </div>
+      
+      <!-- Navigation Links -->
+      <div class="nav-links">
+        <a href="#hero_section" class="nav-link active" data-section="home">
+          <span class="link-text">Home</span>
+        </a>
+        <a href="#about_section" class="nav-link" data-section="about">
+          <span class="link-text">About</span>
+        </a>
+        <a href="#skills_section" class="nav-link" data-section="skills">
+          <span class="link-text">Skills</span>
+        </a>
+        <a href="#project_section" class="nav-link" data-section="projects">
+          <span class="link-text">Projects</span>
+        </a>
+        <a href="#contact_section" class="nav-link" data-section="contact">
+          <span class="link-text">Contact</span>
+        </a>
+      </div>
+      
+      <!-- Mobile Menu Toggle -->
+      <div class="nav-toggle">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-links">
+        <a href="#hero_section" class="mobile-link active">
+          <span class="link-text">Home</span>
+        </a>
+        <a href="#about_section" class="mobile-link">
+          <span class="link-text">About</span>
+        </a>
+        <a href="#skills_section" class="mobile-link">
+          <span class="link-text">Skills</span>
+        </a>
+        <a href="#project_section" class="mobile-link">
+          <span class="link-text">Projects</span>
+        </a>
+        <a href="#contact_section" class="mobile-link">
+          <span class="link-text">Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero_section" class="py-5 mt-5">
+    <div class="container">
+      <div class="hero-container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-white">
+            <div class="hero-content">
+              <div class="hero-intro">
+                <div class="intro-badge">
+                  <i class="fas fa-code"></i>
+                  <span>Hi, I'm <span class="highlight-name">Anirudh</span></span>
+                </div>
+                <h2 class="hero-title">Web Developer & UI Learner</h2>
+              </div>
+              
+              <h1 class="hero-heading">I build digital experiences that <span class="gradient-text">connect, convert, and inspire.</span></h1>
+              
+              <p class="hero-description">
+                Using clean design and modern tools like the MERN stack, 
+                I create responsive, accessible websites that reflect your brand and drive action.
+              </p>
+              
+              <div class="hero-actions">
+                <a href="#project_section" class="hero-btn primary-btn">
+                  <i class="fas fa-eye"></i>
+                  <span>View Projects</span>
+                </a>
+                <a href="#contact_section" class="hero-btn secondary-btn">
+                  <i class="fas fa-paper-plane"></i>
+                  <span>Let's Talk</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="hero-image-container">
+              <img src="image\11950fc7-7b09-4460-9cbf-ae965e69a0b1_removalai_preview.png" alt="Anirudh - Web Developer" class="hero-image img-fluid rounded shadow-lg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about_section" class="py-5">
+    <div class="container">
+      <h2 class="text-center text-white mb-5">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="about-image-container">
+            <img src="image/removed-background.png" alt="About Me" class="about-image img-fluid rounded shadow-lg">
+          </div>
+        </div>
+        <div class="col-md-6 text-white">
+          <p class="lead">Hello! I'm Anirudh, a passionate Web Developer and UI Learner with a knack for creating engaging and functional digital experiences.</p>
+          <p>My journey in web development began with a curiosity for how websites are built, which quickly evolved into a deep passion for crafting beautiful and efficient user interfaces. I specialize in the MERN stack (MongoDB, Express.js, React, Node.js), allowing me to build robust full-stack applications.</p>
+          <p>I believe in clean code, user-centric design, and continuous learning. When I'm not coding, you can find me exploring new design trends or contributing to open-source projects.</p>
+          <a href="#contact_section" class="btn btn-outline-light mt-3">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills_section" class="py-5 bg-darker">
+    <div class="container">
+      <h2 class="text-center text-white mb-5">My Skills</h2>
+      <div class="skills-container">
+        <!-- Frontend Development -->
+        <div class="skill-category">
+          <h4>Frontend Development</h4>
+          <div class="skill-item">
+            <span class="skill-name">HTML5 & CSS3</span>
+            <div class="skill-level">
+              <span class="skill-percentage">95%</span>
+              <div class="skill-dots">
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">JavaScript (ES6+)</span>
+            <div class="skill-level">
+              <span class="skill-percentage">90%</span>
+              <div class="skill-dots">
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot half"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">React.js</span>
+            <div class="skill-level">
+              <span class="skill-percentage">85%</span>
+              <div class="skill-dots">
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Bootstrap & Responsive Design</span>
+            <div class="skill-level">
+              <span class="skill-percentage">90%</span>
+              <div class="skill-dots">
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot half"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend & Database -->
+        <div class="skill-category">
+          <h4>Backend & Database</h4>
+          <div class="skill-item">
+            <span class="skill-name">Node.js & Express.js</span>
+            <div class="skill-level">
+              <span class="skill-percentage">80%</span>
+              <div class="skill-dots">
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">MongoDB</span>
+            <div class="skill-level">
+              <span class="skill-percentage">75%</span>
+              <div class="skill-dots">
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot half"></div>
+                <div class="skill-dot"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">RESTful APIs</span>
+            <div class="skill-level">
+              <span class="skill-percentage">85%</span>
+              <div class="skill-dots">
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Git & GitHub</span>
+            <div class="skill-level">
+              <span class="skill-percentage">90%</span>
+              <div class="skill-dots">
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot filled"></div>
+                <div class="skill-dot half"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feedback-section py-5">
+  <div class="container">
+    <h2 class="text-center text-white mb-5">What People Say</h2>
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Testimonial 1 -->
+      <div class="col-md-5">
+        <div class="feedback-card p-4">
+          <div class="d-flex flex-column align-items-center">
+            <img src="image\Screenshot 2025-07-02 220755.png" class="rounded-circle mb-3" width="60" height="60" alt="Client 1">
+            <p class="text-white text-center">"Anirudh is truly passionate about what he builds. He helped turn our website idea into a responsive and user-friendly design. Communication was clear and updates were fast."</p>
+            <p class="text-muted mt-3">— Priya Sharma <span class="text-white">•</span> Startup Founder</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col-md-5">
+        <div class="feedback-card p-4">
+          <div class="d-flex flex-column align-items-center">
+            <img src="image\create a round png i.png" class="rounded-circle mb-3" width="60" height="60" alt="Client 2">
+            <p class="text-white text-center">"Working with Anirudh was smooth and productive. His eye for detail in UI and his quick grasp of our project goals made the whole experience excellent."</p>
+            <p class="text-muted mt-3">— Rahul Verma <span class="text-white">•</span> Product Manager</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+  <section class="landing-callout-section py-5">
+  <div class="container">
+    <div class="row align-items-center rounded-4 p-4" style="background-color: #121212; border-radius: 15px;">
+      
+      <!-- Avatar -->
+      <div class="col-md-5 text-center mb-4 mb-md-0">
+        <img src="image\not_in_circle_make_i-removebg-preview.png" alt="Anirudh Avatar" class="img-fluid" style="max-height: 260px;" />
+      </div>
+
+      <!-- Text Content -->
+      <div class="col-md-7 text-white">
+        <h2 class="fw-bold mb-3" style="font-size: 2rem;">
+          Your Website isn't converting <span class="text-muted">visitors?</span>
+        </h2>
+        <p class="mb-3">
+          <strong>Here I am.</strong> I design and build <strong>high-performing web pages</strong> that blend clean UI with conversion-focused layouts.
+          From landing pages to portfolios, I ensure your digital presence looks great and <strong>performs flawlessly</strong>.
+        </p>
+        <a href="#project_section" class=" px-4 py-2 mt-2">
+          🔍 Browse my work
+        </a>
+      </div>
+      
+    </div>
+  </div>
+  </section>
+  <!-- Projects Section -->
+  <section id="project_section" class="py-5">
+    <div class="container">
+      <!-- Projects Header -->
+      <div class="projects-header text-center mb-5">
+        <h2 class="projects-title">Featured Projects</h2>
+        <p class="projects-subtitle">Explore my latest work and creative solutions</p>
+      </div>
+      
+      <!-- Filter Buttons -->
+      <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fas fa-th-large"></i>
+          <span>All Projects</span>
+        </button>
+        <button class="filter-btn" data-filter="web">
+          <i class="fas fa-globe"></i>
+          <span>Web Development</span>
+        </button>
+        <button class="filter-btn" data-filter="mobile">
+          <i class="fas fa-mobile-alt"></i>
+          <span>Mobile Apps</span>
+        </button>
+        <button class="filter-btn" data-filter="design">
+          <i class="fas fa-palette"></i>
+          <span>UI/UX Design</span>
+        </button>
+      </div>
+      
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="web">
+          <div class="project-image-container">
+            <div class="project-image">
+              <img src="image/Screenshot 2025-07-02 193731.png" alt="Modern e-commerce dashboard with product analytics and sales metrics visualization">
+            </div>
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <div class="project-status">
+                  <span class="status-badge completed">Completed</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="project-action-btn demo-btn">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="#" class="project-action-btn code-btn">
+                    <i class="fab fa-github"></i>
+                    <span>View Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title">E-Commerce Dashboard</h3>
+              <div class="project-category">
+                <i class="fas fa-globe"></i>
+                <span>Web Development</span>
+              </div>
+            </div>
+            <p class="project-description">
+              A comprehensive dashboard for e-commerce businesses with real-time analytics, sales tracking, and inventory management.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">D3.js</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-stats">
+                <div class="stat-item">
+                  <i class="fas fa-clock"></i>
+                  <span>3 months</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-code"></i>
+                  <span>15k+ lines</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card" data-category="web">
+          <div class="project-image-container">
+            <div class="project-image">
+              <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/814fc2c5-119b-474d-8f04-8dbae3ddf146.png" alt="Social media platform interface with user profiles and content feed in dark mode">
+            </div>
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <div class="project-status">
+                  <span class="status-badge in-progress">In Progress</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="project-action-btn demo-btn">
+                    <i class="fas fa-external-link-alt"></i>
+                    <span>Live Demo</span>
+                  </a>
+                  <a href="#" class="project-action-btn code-btn">
+                    <i class="fab fa-github"></i>
+                    <span>View Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title">Social Network</h3>
+              <div class="project-category">
+                <i class="fas fa-globe"></i>
+                <span>Web Development</span>
+              </div>
+            </div>
+            <p class="project-description">
+              Full-stack social networking platform with user authentication, real-time notifications, and content sharing.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Vue.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Socket.IO</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-stats">
+                <div class="stat-item">
+                  <i class="fas fa-clock"></i>
+                  <span>4 months</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-code"></i>
+                  <span>25k+ lines</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card" data-category="mobile">
+          <div class="project-image-container">
+            <div class="project-image">
+              <img src="image/Screenshot 2025-07-05 213955.png" alt="Recipe mobile app showing detailed cooking instructions with step-by-step photos">
+            </div>
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <div class="project-status">
+                  <span class="status-badge completed">Completed</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="project-action-btn demo-btn">
+                    <i class="fab fa-google-play"></i>
+                    <span>Play Store</span>
+                  </a>
+                  <a href="#" class="project-action-btn code-btn">
+                    <i class="fab fa-github"></i>
+                    <span>View Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title">Recipe Finder</h3>
+              <div class="project-category">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Mobile App</span>
+              </div>
+            </div>
+            <p class="project-description">
+              Mobile application for discovering recipes based on available ingredients with dietary restriction filters.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Redux</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-stats">
+                <div class="stat-item">
+                  <i class="fas fa-clock"></i>
+                  <span>2 months</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-code"></i>
+                  <span>12k+ lines</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="project-card" data-category="design">
+          <div class="project-image-container">
+            <div class="project-image">
+              <img src="Screenshot 2025-07-05 213249.png" alt="Creative portfolio website design with animated transitions and bold typography">
+            </div>
+            <div class="project-overlay">
+              <div class="project-overlay-content">
+                <div class="project-status">
+                  <span class="status-badge completed">Completed</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="project-action-btn demo-btn">
+                    <i class="fas fa-eye"></i>
+                    <span>Prototype</span>
+                  </a>
+                  <a href="#" class="project-action-btn code-btn">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Case Study</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title">Portfolio Website</h3>
+              <div class="project-category">
+                <i class="fas fa-palette"></i>
+                <span>UI/UX Design</span>
+              </div>
+            </div>
+            <p class="project-description">
+              Elegant portfolio website design for creative professionals with animated transitions and bold typography.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Sketch</span>
+              <span class="tech-tag">Principle</span>
+              <span class="tech-tag">Motion Design</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-stats">
+                <div class="stat-item">
+                  <i class="fas fa-clock"></i>
+                  <span>1 month</span>
+                </div>
+                <div class="stat-item">
+                  <i class="fas fa-layers"></i>
+                  <span>15 screens</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- View More Projects Button -->
+      <div class="text-center mt-5">
+        <a href="#" class="view-more-btn">
+          <span>View All Projects</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact_section" class="py-5">
+    <div class="container">
+      <div class="contact-header text-center mb-5">
+        <h2 class="text-white mb-3">Let's Build Something Amazing Together</h2>
+        <p class="text-muted">Ready to start your next project? I'm here to help bring your ideas to life.</p>
+      </div>
+      
+      <div class="row">
+        <!-- Contact Information Cards -->
+        <div class="col-lg-4 mb-4">
+          <div class="contact-info-container">
+            <div class="contact-info-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h4>Email</h4>
+              <p>anirudhannengattil@gmail@gmail.com</p>
+              <a href="mailto:anirudhannengattil@gmail@gmail.com" class="contact-action-btn">
+                <i class="fas fa-paper-plane"></i> Send Email
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 mb-4">
+          <div class="contact-info-container">
+            <div class="contact-info-card">
+              <div class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <h4>LinkedIn</h4>
+              <p>Connect professionally</p>
+              <a href="https://www.linkedin.com/in/anirudhannengattil?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmBi8sIvfT92NfAVKyB9OQQ%3D%3D" target="_blank" class="contact-action-btn">
+                <i class="fab fa-linkedin"></i> Connect
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 mb-4">
+          <div class="contact-info-container">
+            <div class="contact-info-card">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h4>Phone</h4>
+              <p>+91 7012217653</p>
+              <a href="tel:+917012217653" class="contact-action-btn">
+                <i class="fas fa-phone"></i> Call Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Form Section -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <div class="contact-form-container">
+            <div class="contact-form-header">
+              <h3 class="text-white mb-3">Send me a message</h3>
+              <p class="text-muted">Tell me about your project and I'll get back to you within 24 hours.</p>
+            </div>
+            
+            <form id="contactForm" class="contact-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name" class="form-label">Full Name *</label>
+                    <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email" class="form-label">Email Address *</label>
+                    <input type="email" class="form-control" id="email" placeholder="john@example.com" required>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="+1 (555) 123-4567">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="project_type" class="form-label">Project Type</label>
+                    <select class="form-control" id="project_type">
+                      <option value="">Select project type</option>
+                      <option value="web-development">Web Development</option>
+                      <option value="mobile-app">Mobile App</option>
+                      <option value="ui-ux-design">UI/UX Design</option>
+                      <option value="consultation">Consultation</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject *</label>
+                <input type="text" class="form-control" id="subject" placeholder="Brief description of your project" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Project Details *</label>
+                <textarea class="form-control" id="message" rows="6" placeholder="Tell me about your project, goals, timeline, and any specific requirements..." required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="budget" class="form-label">Budget Range</label>
+                <select class="form-control" id="budget">
+                  <option value="">Select budget range</option>
+                  <option value="under-5k">Under $5,000</option>
+                  <option value="5k-10k">$5,000 - $10,000</option>
+                  <option value="10k-25k">$10,000 - $25,000</option>
+                  <option value="25k-50k">$25,000 - $50,000</option>
+                  <option value="over-50k">Over $50,000</option>
+                  <option value="discuss">Let's discuss</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="newsletter">
+                  <label class="form-check-label" for="newsletter">
+                    Subscribe to my newsletter for web development tips and updates
+                  </label>
+                </div>
+              </div>
+              
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-lg">
+                  <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+                <button type="button" class="btn btn-outline-light btn-lg ml-3" id="scheduleCall">
+                  <i class="fas fa-calendar-alt"></i> Schedule a Call
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Quick Contact Options -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="quick-contact-container">
+            <h4 class="text-white text-center mb-4">Quick Contact Options</h4>
+            <div class="quick-contact-grid">
+              <a href="https://calendly.com/anirudh" target="_blank" class="quick-contact-item">
+                <i class="fas fa-calendar-check"></i>
+                <span>Schedule a Meeting</span>
+              </a>
+              <a href="https://wa.me/917012217653" target="_blank" class="quick-contact-item">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+              <a href="https://t.me/anirudh" target="_blank" class="quick-contact-item">
+                <i class="fab fa-telegram"></i>
+                <span>Telegram</span>
+              </a>
+              <a href="https://discord.gg/anirudh" target="_blank" class="quick-contact-item">
+                <i class="fab fa-discord"></i>
+                <span>Discord</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-5 mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Personal Info -->
+        <div class="col-lg-4 mb-4">
+          <div class="footer-section">
+            <h4 class="footer-title">Anirudh</h4>
+            <p class="footer-description">
+              A passionate web developer and UI learner dedicated to creating innovative digital experiences. 
+              I transform ideas into elegant, user-centric solutions that drive results.
+            </p>
+            <div class="footer-contact">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <span>anirudhannengattil@gmail@gmail.com</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <div class="footer-section">
+            <h5 class="footer-subtitle">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="#hero_section">Home</a></li>
+              <li><a href="#about_section">About</a></li>
+              <li><a href="#skills_section">Skills</a></li>
+              <li><a href="#project_section">Projects</a></li>
+              <li><a href="#contact_section">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Services -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <div class="footer-section">
+            <h5 class="footer-subtitle">Services</h5>
+            <ul class="footer-links">
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">UI/UX Design</a></li>
+              <li><a href="#">Mobile Apps</a></li>
+              <li><a href="#">Consultation</a></li>
+              <li><a href="#">Maintenance</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Connect -->
+        <div class="col-lg-4 mb-4">
+          <div class="footer-section">
+            <h5 class="footer-subtitle">Let's Connect</h5>
+            <p class="footer-description">
+              Ready to start your next project? Let's discuss how I can help bring your ideas to life.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#" class="social-link" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-link" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link" title="Dribbble">
+                <i class="fab fa-dribbble"></i>
+              </a>
+              <a href="#" class="social-link" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+            <div class="footer-newsletter">
+              <p class="newsletter-text">Subscribe to my newsletter</p>
+              <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email" class="newsletter-input">
+                <button class="newsletter-btn">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="copyright-text">
+              &copy; 2024 Anirudh. All rights reserved. | Made with <i class="fas fa-heart"></i> and lots of ☕
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="footer-bottom-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Sitemap</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
