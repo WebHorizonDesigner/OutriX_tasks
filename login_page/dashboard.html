@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard - SecureAuth</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      color: white;
+    }
+
+    .navbar {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(45deg, #667eea, #764ba2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+    }
+
+    .logout-btn {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .logout-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .welcome-section {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .welcome-section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, #fff, #f0f0f0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .welcome-section p {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border-radius: 16px;
+      padding: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .card p {
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.6;
+    }
+
+    .session-info {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .session-info h4 {
+      margin-bottom: 1rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .session-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .session-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .session-item:last-child {
+      border-bottom: none;
+    }
+
+    .session-label {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+    }
+
+    .session-value {
+      color: white;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 1rem;
+      }
+      
+      .container {
+        padding: 1rem;
+      }
+      
+      .welcome-section h1 {
+        font-size: 2rem;
+      }
+      
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <i class="fas fa-shield-alt"></i>
+      <span>SecureAuth</span>
+    </div>
+    <div class="user-info">
+      <div class="user-avatar" id="userAvatar">U</div>
+      <span id="userName">User</span>
+      <a href="#" class="logout-btn" id="logoutBtn">
+        <i class="fas fa-sign-out-alt"></i>
+        Logout
+      </a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="welcome-section">
+      <h1>Welcome to Your Dashboard</h1>
+      <p>You have successfully logged into your SecureAuth account</p>
+    </div>
+
+    <div class="dashboard-grid">
+      <div class="card">
+        <h3>
+          <i class="fas fa-user-shield"></i>
+          Account Security
+        </h3>
+        <p>Your account is protected with advanced security measures. All login attempts are monitored and logged for your safety.</p>
+      </div>
+
+      <div class="card">
+        <h3>
+          <i class="fas fa-chart-line"></i>
+          Activity Overview
+        </h3>
+        <p>Track your login history and account activity. View detailed analytics about your account usage and security events.</p>
+      </div>
+
+      <div class="card">
+        <h3>
+          <i class="fas fa-cog"></i>
+          Account Settings
+        </h3>
+        <p>Manage your account preferences, update your profile information, and configure security settings to keep your account safe.</p>
+      </div>
+    </div>
+
+    <div class="session-info">
+      <h4>Current Session Information</h4>
+      <div class="session-details" id="sessionDetails">
+        <!-- Session details will be populated by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Session management
+    class SessionManager {
+      constructor() {
+        this.sessionKey = 'secureAuth_session';
+        this.userKey = 'secureAuth_user';
+      }
+
+      isLoggedIn() {
+        const session = this.getSession();
+        if (!session) return false;
+        
+        if (session.expiresAt && new Date() > new Date(session.expiresAt)) {
+          this.logout();
+          return false;
+        }
+        
+        return true;
+      }
+
+      getSession() {
+        const session = localStorage.getItem(this.sessionKey);
+        return session ? JSON.parse(session) : null;
+      }
+
+      getCurrentUser() {
+        const user = localStorage.getItem(this.userKey);
+        return user ? JSON.parse(user) : null;
+      }
+
+      logout() {
+        localStorage.removeItem(this.sessionKey);
+        localStorage.removeItem(this.userKey);
+        window.location.href = 'index.html';
+      }
+    }
+
+    // Initialize dashboard
+    document.addEventListener('DOMContentLoaded', () => {
+      const sessionManager = new SessionManager();
+      
+      // Check if user is logged in
+      if (!sessionManager.isLoggedIn()) {
+        window.location.href = 'index.html';
+        return;
+      }
+
+      // Get user data
+      const user = sessionManager.getCurrentUser();
+      const session = sessionManager.getSession();
+
+      // Update UI with user data
+      if (user) {
+        document.getElementById('userName').textContent = user.name || user.username;
+        document.getElementById('userAvatar').textContent = (user.name || user.username).charAt(0).toUpperCase();
+      }
+
+      // Populate session details
+      const sessionDetails = document.getElementById('sessionDetails');
+      if (session) {
+        const details = [
+          { label: 'User ID', value: user?.id || 'N/A' },
+          { label: 'Username', value: user?.username || 'N/A' },
+          { label: 'Email', value: user?.email || 'N/A' },
+          { label: 'Session Token', value: session.token.substring(0, 20) + '...' },
+          { label: 'Login Time', value: new Date(session.createdAt).toLocaleString() },
+          { label: 'Expires At', value: new Date(session.expiresAt).toLocaleString() }
+        ];
+
+        sessionDetails.innerHTML = details.map(detail => `
+          <div class="session-item">
+            <span class="session-label">${detail.label}:</span>
+            <span class="session-value">${detail.value}</span>
+          </div>
+        `).join('');
+      }
+
+      // Logout functionality
+      document.getElementById('logoutBtn').addEventListener('click', (e) => {
+        e.preventDefault();
+        sessionManager.logout();
+      });
+    });
+  </script>
+</body>
+</html> 
